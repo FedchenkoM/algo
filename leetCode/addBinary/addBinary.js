@@ -39,6 +39,3 @@ var addBinary = function (a, b) {
  * @return {string}
  */
 var addBinary2 = (a, b) => (BigInt(`0B${a}`) + BigInt(`0B${b}`)).toString(2)
-
-
-console.log(addBinary(a, b))
