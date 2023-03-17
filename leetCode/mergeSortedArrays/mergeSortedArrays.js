@@ -1,7 +1,7 @@
 //https://leetcode.com/problems/merge-sorted-array/
 
-const nums1 = [4, 5, 6, 0, 0, 0], m = 3, nums2 = [1, 2, 3], n = 3
-// const nums1 = [1], m = 1, nums2 = [], n = 0
+const nums1 = [4, 5, 6, 0, 0, 0], m = 3, nums2 = [1, 2, 3], n = 3;
+const nums11 = [1], m1 = 1, nums12 = [], n2 = 0
 
 /**
  * @param {number[]} nums1
@@ -36,5 +36,3 @@ var merge = function (nums1, m, nums2, n) {
 
 };
 
-
-console.log(merge(nums1, m, nums2, n));
