@@ -12,6 +12,7 @@
     },
     "rules": {
         "no-plusplus": "off",
+        "no-param-reassign": "off",
         "no-unused-vars": "off",
         "no-multi-assign": "off",
         "no-undef": "off",
