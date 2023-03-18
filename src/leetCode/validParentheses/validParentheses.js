@@ -1,35 +1,32 @@
 // https://leetcode.com/problems/valid-parentheses/
 
 /**
- * @param {string} 
+ * @param {string}
  * @return {boolean}
  */
-var isValid = function (s) {
-  const dict = {
-    ')': '(',
-    '}': '{',
-    ']': '[',
-  };
+const isValid = function (s) {
+    const dict = {
+        ')': '(',
+        '}': '{',
+        ']': '[',
+    };
 
-  let stack = [];
+    const stack = [];
 
-  for (let i = 0; i < s.length; i++) {
-    const e = s[i];
+    for (let i = 0; i < s.length; i++) {
+        const e = s[i];
 
-    if (e in dict) {
+        if (e in dict) {
+            if (dict[e] === stack[stack.length - 1]) {
+                stack.pop();
+                continue;
+            }
 
-      if (dict[e] === stack[stack.length - 1]) {
-        stack.pop();
-        continue;
-      }
+            return false;
+        }
 
-      return false;
+        stack.push(e);
     }
 
-    stack.push(e);
-  }
-
-  return !stack.length;
+    return !stack.length;
 };
-
-

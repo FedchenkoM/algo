@@ -3,7 +3,7 @@
         "browser": true,
         "es2021": true
     },
-    "extends": ["airbnb-base", "prettier"],
+    "extends": ["eslint:recommended" ,"airbnb-base", "prettier"],
     "overrides": [
     ],
     "parserOptions": {
@@ -18,6 +18,10 @@
         "no-undef": "off",
         "no-shadow": "off",
         "func-names": "off",
-        "eqeqeq": "off"
+        "eqeqeq": "off",
+        "no-continue": "off",
+        "class-methods-use-this": "off",
+        "consistent-return": "off",
+        "no-sequences": "off"
     }
 }
