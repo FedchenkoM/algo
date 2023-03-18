@@ -1,14 +1,14 @@
-//https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
+// https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
 
-const haystack = "leetocode", needle = "leebt";
-const haystack2 = "leetocode", needle2 = "code";
+const haystack = "leetocode"; const needle = "leebt";
+const haystack2 = "leetocode"; const needle2 = "code";
 
 /**
  * @param {string} haystack
  * @param {string} needle
  * @return {number}
  */
-var strStr = function (haystack, needle) {
+const strStr = function (haystack, needle) {
   let r = -1;
   for (let i = 0; i < haystack.length; i++) {
     if (haystack[i] === needle[0]) {

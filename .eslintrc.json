@@ -12,8 +12,9 @@
     },
     "rules": {
         "no-plusplus": "off",
-        "no-console": "error",
         "no-unused-vars": "off",
+        "no-multi-assign": "off",
+        "no-undef": "off",
         "no-shadow": "off",
         "func-names": "off",
         "eqeqeq": "off"
