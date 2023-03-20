@@ -4,18 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "eslint src/**"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FedchenkoM/algo.git"
   },
-  "author": "",
+  "author": "Fedch",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/FedchenkoM/algo/issues"
-  },
   "homepage": "https://github.com/FedchenkoM/algo#readme",
   "devDependencies": {
     "eslint": "^8.36.0",
