@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/same-tree/
-import { TREES } from './trees';
 
 const isSameTree = function (p, q) {
     const stack = [];
@@ -24,5 +23,3 @@ const isSameTree = function (p, q) {
 
     return true;
 };
-
-isSameTree(TREES.tree, TREES.tree2);
