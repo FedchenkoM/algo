@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/reverse-linked-list/
+
 const linkedList = {
     val: 1,
     next: {
