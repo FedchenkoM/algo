@@ -4,7 +4,7 @@
     "npm run eslint",
     "git add"
   ],
-  "*": [
+  "./": [
     "npm run test"
   ]
 }
