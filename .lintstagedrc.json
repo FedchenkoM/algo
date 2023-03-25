@@ -2,6 +2,7 @@
   "*.js": [
     "prettier --write",
     "npm run eslint",
+    "npm run test",
     "git add"
   ]
 }

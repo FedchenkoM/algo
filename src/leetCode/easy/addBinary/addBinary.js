@@ -1,10 +1,5 @@
 // https://leetcode.com/problems/add-binary/
 
-const a = '1111';
-const b = '1111';
-const a2 = '11110';
-const b2 = '1111';
-
 /**
  * @param {string} a
  * @param {string} b
@@ -14,7 +9,7 @@ const addBinary = function (a, b) {
     const r = [];
     let buf = 0;
 
-    for (let k = a.length - 1, j = b.length - 1; k > -1, j > -1; k--, j--) {
+    for (let k = a.length - 1, j = b.length - 1; k > -1 || j > -1; k--, j--) {
         const s = (+a[k] || 0) + (+b[j] || 0) + buf;
 
         if (s == 2) {
@@ -39,3 +34,5 @@ const addBinary = function (a, b) {
  * @return {string}
  */
 const addBinary2 = (a, b) => (BigInt(`0B${a}`) + BigInt(`0B${b}`)).toString(2);
+
+module.exports = { addBinary, addBinary2 };
