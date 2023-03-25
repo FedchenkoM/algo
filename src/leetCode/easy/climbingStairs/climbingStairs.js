@@ -14,3 +14,5 @@ const climbStairs = function (n) {
     }
     return j;
 };
+
+module.exports = climbStairs;
