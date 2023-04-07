@@ -22,4 +22,23 @@ const countBits = function (n) {
     return ans;
 };
 
-module.exports = countBits;
+// Bits manipulation solution
+const countBits2 = function (n) {
+    const ans = [0];
+
+    for (let i = 1; i <= n; i++) {
+        let bits = 0;
+        let j = i;
+
+        while (j) {
+            bits += j & 1;
+            j >>= 1;
+        }
+
+        ans.push(bits);
+    }
+
+    return ans;
+};
+
+module.exports = { countBits, countBits2 };

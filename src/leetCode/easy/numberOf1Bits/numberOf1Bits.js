@@ -15,4 +15,16 @@ const hammingWeight = function (n) {
     return res;
 };
 
-module.exports = hammingWeight;
+// Bits manipulation solution
+const hammingWeightBit = function (n) {
+    let res = 0;
+
+    while (n) {
+        res += n & 1;
+        n >>= 1;
+    }
+
+    return res;
+};
+
+module.exports = { hammingWeight, hammingWeightBit };
