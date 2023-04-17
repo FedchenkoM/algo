@@ -1,6 +1,6 @@
 const getRow = require('../pascalTriangleII');
 
-test('counting bits', () => {
+test('pascal triangle II', () => {
     expect(getRow(0)).toStrictEqual([1]);
     expect(getRow(1)).toStrictEqual([1, 1]);
     expect(getRow(2)).toStrictEqual([1, 2, 1]);

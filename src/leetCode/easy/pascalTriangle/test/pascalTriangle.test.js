@@ -1,6 +1,6 @@
 const generate = require('../pascalTriangle');
 
-test('counting bits', () => {
+test('pascal trianle', () => {
     expect(generate(1)).toStrictEqual([[1]]);
     expect(generate(2)).toStrictEqual([[1], [1, 1]]);
     expect(generate(3)).toStrictEqual([[1], [1, 1], [1, 2, 1]]);
