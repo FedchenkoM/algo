@@ -23,6 +23,7 @@
         "no-sequences": "off",
         "import/prefer-default-export": "off",
         "import/extensions": "off",
-        "no-bitwise": "off"
+        "no-bitwise": "off",
+        "no-restricted-syntax": "off"
     }
 }
