@@ -1,7 +1,5 @@
 // https://leetcode.com/problems/squares-of-a-sorted-array/
 
-const nums = [-4, -1, 0, 3, 10];
-
 /**
  * @param {number[]} nums
  * @return {number[]}
